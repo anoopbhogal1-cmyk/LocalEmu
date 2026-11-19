@@ -1,0 +1,8 @@
+# Cloudflare Pages project config (Wrangler 3+).
+#
+#  npx wrangler pages deploy dist --project-name=localemu
+#
+# Build settings in the dashboard should match this file.
+name = "localemu"
+pages_build_output_dir = "dist"
+compatibility_date = "2025-01-01"

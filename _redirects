@@ -1,0 +1,3 @@
+# Single-page app fallback: any unknown path serves index.html (200),
+# so https://localemu.pages.dev/anything never 404s into a blank screen.
+/*    /index.html   200

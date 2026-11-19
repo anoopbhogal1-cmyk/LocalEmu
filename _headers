@@ -1,0 +1,13 @@
+# Cloudflare Pages headers — required for a static client-side app that runs
+# IndexedDB, WebCrypto and the EmulatorJS WebAssembly core.
+#
+# The COOP/COEP pair below is intentionally NOT enabled by default: EmulatorJS
+# loads its core from https://cdn.emulatorjs.org and COEP=require-corp would
+# block that cross-origin script/wasm and produce a blank player. Only add them
+# if you self-host the core and need SharedArrayBuffer (threaded cores).
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: gamepad=*, fullscreen=*, autoplay=*, interest-cohort=()
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
